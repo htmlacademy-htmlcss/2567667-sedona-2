@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Амаль Габидов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2567667).
-* Наставник: `Неизвестно`.
+* Наставник: [Валера Хаслер](https://htmlacademy.ru/profile/id224163).
 
 ---
 
