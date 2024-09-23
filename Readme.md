@@ -2,7 +2,7 @@
 
 * Студент: [Амаль Габидов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2567667).
 * Наставник: [Валера Хаслер](https://htmlacademy.ru/profile/id224163).
-
+* Сайт: [Мой проект Седона](https://amaleshayo.github.io/2567667-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
