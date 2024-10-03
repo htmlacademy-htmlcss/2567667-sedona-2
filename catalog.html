@@ -8,7 +8,7 @@
    <!-- Хедер -->
    <header class="page-header">
     <nav class="navigation">
-      <a href="navigation-logo" href="#">
+      <a href="navigation-logo">
         <img class="page-header-logo" alt="Header Logo" src="#">
       </a>
       <ul class="navigation-list">
@@ -52,37 +52,39 @@
         <div class="container">
             <h1>Гостиницы Седоны</h1>
             <div class="breadcrumb">
-              <a href="#">Главная</a> > <span>Гостиницы</span>
+              <a href="#">Главная</a> &#62; <span>Гостиницы</span>
             </div>
-            <div class="filter-options">
-                <div class="infrastructure">
-                    <h3>Инфраструктура:</h3>
-                    <label><input type="checkbox" checked> Бассейн</label>
-                    <label><input type="checkbox" checked> Парковка</label>
-                    <label><input type="checkbox"> Wi-Fi</label>
-                </div>
-                <div class="housing-type">
-                    <h3>Тип Жилья:</h3>
-                    <label><input type="radio" name="housing" checked> Гостиница</label>
-                    <label><input type="radio" name="housing"> Мотель</label>
-                    <label><input type="radio" name="housing"> Апартаменты</label>
-                </div>
-                <div class="price-range">
-                    <h3>Стоимость, ₽:</h3>
-                    <div class="price-input">
-                        <input type="number" value="0" min="0" id="min-price">
-                        <span>от</span>
-                        <input type="number" value="9000" max="10000" id="max-price">
-                    </div>
-                    <div class="price-slider">
-                        <input type="range" id="price-slider" min="0" max="10000" value="9000">
-                    </div>
-                </div>
-                <div class="buttons">
-                    <button class="apply-btn">Применить</button>
-                    <button class="reset-btn">Сбросить</button>
-                </div>
-            </div>
+            <form action="https://echo.htmlacademy.ru/" method="GET">
+              <div class="filter-options">
+                  <div class="infrastructure">
+                      <h3>Инфраструктура:</h3>
+                      <label><input type="checkbox" name="infrastructure[]" value="Бассейн" checked>Бассейн</label>
+                      <label><input type="checkbox" name="infrastructure[]" value="Парковка" checked>Парковка</label>
+                      <label><input type="checkbox" name="infrastructure[]" value="Wi-Fi">Wi-Fi</label>
+                  </div>
+                  <div class="housing-type">
+                      <h3>Тип Жилья:</h3>
+                      <label><input type="radio" name="housing" value="hotel" checked>Гостиница</label>
+                      <label><input type="radio" name="housing" value="motel">Мотель</label>
+                      <label><input type="radio" name="housing" value="apartment">Апартаменты</label>
+                  </div>
+                  <div class="price-range">
+                      <h3>Стоимость, ₽:</h3>
+                      <div class="price-input">
+                          <input type="number" name="min-price" value="0" min="0" id="min-price">
+                          <span>от</span>
+                          <input type="number" name="max-price" value="9000" max="10000" id="max-price">
+                      </div>
+                      <div class="price-slider">
+                          <input type="range" id="price-slider" name="price-slider" min="0" max="10000" value="9000">
+                      </div>
+                  </div>
+                  <div class="buttons">
+                      <button class="apply-btn" type="submit">Применить</button>
+                      <button class="reset-btn" type="reset">Сбросить</button>
+                  </div>
+              </div>
+            </form>
         </div>
     </section>
     <section class="hotel-list-section">
@@ -97,10 +99,13 @@
                   </select>
                   <div class="view-controls">
                       <button class="grid-view active">
-                          <img src="icon-grid.png" alt="Grid view">
+                          <img src="#" alt="Grid view">
                       </button>
                       <button class="list-view">
-                          <img src="icon-list.png" alt="List view">
+                          <img src="#" alt="List view">
+                      </button>
+                      <button class="mosaic-view">
+                        <img src="#" alt="Mosaic view">
                       </button>
                   </div>
               </div>
@@ -108,7 +113,7 @@
 
           <div class="hotel-cards">
               <div class="hotel-card">
-                  <img src="hotel1.jpg" alt="Amara Resort & Spa">
+                  <img src="#" alt="Amara Resort & Spa">
                   <h3>Amara Resort & Spa</h3>
                   <p>Гостиница</p>
                   <p>От 4000 ₽</p>
@@ -121,7 +126,7 @@
               </div>
 
               <div class="hotel-card">
-                  <img src="hotel2.jpg" alt="Villas at Poco Diablo">
+                  <img src="#" alt="Villas at Poco Diablo">
                   <h3>Villas at Poco Diablo</h3>
                   <p>Гостиница</p>
                   <p>От 5000 ₽</p>
@@ -134,7 +139,7 @@
               </div>
 
               <div class="hotel-card">
-                  <img src="hotel3.jpg" alt="Desert Quail Inn">
+                  <img src="#" alt="Desert Quail Inn">
                   <h3>Desert Quail Inn</h3>
                   <p>Гостиница</p>
                   <p>От 2500 ₽</p>
@@ -147,7 +152,7 @@
               </div>
 
               <div class="hotel-card">
-                  <img src="hotel4.jpg" alt="GreenTree Inn">
+                  <img src="#" alt="GreenTree Inn">
                   <h3>GreenTree Inn</h3>
                   <p>Гостиница</p>
                   <p>От 1500 ₽</p>
