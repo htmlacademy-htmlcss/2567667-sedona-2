@@ -1,0 +1,598 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.page-header {
+  background-color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-header-logo {
+  width: 138px;
+  height: 64px;
+  margin-right: 40px;
+}
+
+/* Стили для навигации */
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navigation-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-item {
+  margin-right: 30px;
+}
+
+.navigation-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+.navigation-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #5A4631;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.navigation-link:hover::after {
+  width: 100%;
+}
+
+/* Стили для поиска и избранного справа */
+.navigation-user {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-item .navigation-link img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.search-button,
+.favorites-button {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.search-button img,
+.favorites-button img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Счетчик для избранного */
+.favorites-button {
+  position: relative;
+}
+
+.favorites-button::after {
+  content: '12'; /* Количество избранных элементов */
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #83c872;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+/* Стили для кнопки "Хочу сюда!" */
+.navigation-link-button {
+  background-color: #6B4F3D;
+  display: flex;
+  color: #fff;
+  padding: 8px 50px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  gap: 10px;
+}
+
+.navigation-link-button:hover {
+  background-color: #533A2E;
+}
+
+/* Контейнер для размещения всего справа */
+.page-header-right {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+/* Основной контейнер секции hero */
+.logo-section {
+  position: relative;
+  height: 485px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Фоновое изображение */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2; /* Фоновое изображение за всеми элементами */
+}
+
+/* Векторное изображение */
+.hero-vector {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1; /* Вектор поверх фона, но за текстом */
+}
+
+/* Логотипы и текстовые элементы */
+.logo-section img.logo {
+  position: relative;
+  z-index: 1; /* Логотипы и текст поверх всех элементов */
+  margin: 10px 0;
+}
+
+/* Welcome надпись */
+.logo-section img[alt="Welcome"] {
+  width: 188px;
+  height: auto;
+}
+
+/* to the gorgeous надпись */
+.logo-section img[alt="to the gorgeous"] {
+  width: 256px;
+  height: auto;
+}
+
+/* SEDONA надпись */
+.logo-section img[alt="Sedona"] {
+  width: 457px;
+  height: auto;
+}
+
+/* Секция "О Седоне" */
+.about-sedona {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.about-sedona h2 {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-sedona p {
+  font-size: 18px;
+  color: #333333;
+  margin-top: 10px;
+}
+
+
+
+/* Основной стиль для каждого элемента */
+.advantages-item-1 {
+  background-color: #82B3D3; /* Голубой фон */
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 385px;
+  max-width: 400px; /* Ограничение максимальной ширины */
+  margin: 100 auto; /* Центрирование блока */
+  box-sizing: border-box;
+}
+
+/* Заголовок блока */
+.advantages-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Разделитель под заголовком */
+.advantages-item-1 hr {
+  width: 60px;
+  border: 1px solid #FFFFFF4D;
+  margin: 10px auto;
+}
+
+/* Описание блока */
+.advantages-description {
+  font-size: 18px;
+  color: #fff;
+  line-height: 21px;
+}
+
+.advantages-item-2 {
+  background-color: #83B3D31F; /* Голубой фон */
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 385px;
+  max-width: 400px; /* Ограничение максимальной ширины */
+  margin: 100 auto; /* Центрирование блока */
+  box-sizing: border-box;
+}
+
+.advantages-item-2 hr {
+  width: 60px;
+  border: 1px solid #0000004D;
+  margin: 10px auto;
+}
+
+.advantages-title-2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.advantages-description-2 {
+  font-size: 18px;
+  color: #333333;
+  line-height: 21px;
+}
+
+.advantages-item-3 {
+  background-color: #83B3D333;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 385px;
+  max-width: 400px; /* Ограничение максимальной ширины */
+  margin: 100 auto; /* Центрирование блока */
+  box-sizing: border-box;
+}
+
+.sedona-about-title {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sedona-about-personal {
+  font-size: 18px;
+  color: #333333;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.recomendation-home {
+  background-color: #83B3D31F;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 385px;
+  max-width: 400px; /* Ограничение максимальной ширины */
+  margin: 100 auto; /* Центрирование блока */
+  box-sizing: border-box;
+}
+
+.recomendation-title {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.recomendation-description{
+  font-size: 18px;
+  color: #333333;
+  line-height: 21px;
+}
+
+.recomendation-food {
+  background-color: rgba(242, 242, 242, 1);
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 385px;
+  max-width: 400px; /* Ограничение максимальной ширины */
+  margin: 100 auto; /* Центрирование блока */
+  box-sizing: border-box;
+}
+
+.recomendation-title {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.recomendation-description{
+  font-size: 18px;
+  color: #333333;
+  line-height: 21px;
+}
+
+.recomendation-souvenirs {
+  background-color: #83B3D31F;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 385px;
+  max-width: 400px; /* Ограничение максимальной ширины */
+  margin: 100 auto; /* Центрирование блока */
+  box-sizing: border-box;
+}
+
+.recomendation-title {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.recomendation-description{
+  font-size: 18px;
+  color: #333333;
+  line-height: 21px;
+}
+
+.hotel-search-title {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hotel-search-description {
+  font-size: 18px;
+  color: #333333;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Контейнер для секции поиска гостиницы */
+.hotel-search {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(242, 242, 242, 1);
+  margin: 0 auto;
+  max-width: 800px; /* Ограничение ширины контейнера */
+}
+
+/* Кнопка */
+.hotel-search-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #756157; /* Коричневый цвет кнопки */
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hotel-search-button:hover {
+  background-color: #6b5148; /* Темнее при наведении */
+}
+
+
+
+/* Контейнер для секции подписки */
+.subscribe {
+  position: relative;
+  text-align: center;
+  padding: 96px 258px 104px 258px;
+  color: #FFFFFF; /* Белый цвет текста */
+  width: Hug (1,200px)px;
+  height: Hug (414.86px)px;
+  gap: 10px;
+}
+
+/* Фоновое изображение */
+.background-photo-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Масштабируем фото, чтобы оно занимало весь блок */
+  z-index: -1; /* Фон должен быть позади текста */
+}
+
+/* Заголовок */
+.subscribe-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Описание */
+.subscribe-description {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Форма подписки */
+form {
+  display: inline-flex;
+  padding: 5px;
+  border: 0;
+}
+
+/* Поле для ввода e-mail */
+form input[type="email"] {
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px 4px;
+  outline: none;
+  width: 452px;
+  box-sizing: border-box;
+  background: #F2F2F2;
+}
+
+/* Кнопка подписки */
+form button {
+  background-color: #82B3D3; /* Цвет кнопки */
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+
+  width: 232px;
+  height: 52px;
+
+
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+
+form button:hover {
+  background-color: #4b8bb1; /* Изменение цвета кнопки при наведении */
+}
+
+
+/* Основной контейнер для контактной информации */
+.contact-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(242, 242, 242, 1); /* Белый фон */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Список иконок социальных сетей */
+.contact-information-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+/* Элементы списка социальных сетей */
+.contact-information-item a {
+  display: inline-block;
+}
+
+/* Номер телефона */
+.contacts-address-phone-number {
+  font-size: 40px;
+  color: #000000;
+  text-decoration: none;
+  width: 331px;
+  height: 40px;
+}
+
+/* Логотип компании */
+.contacts-logo {
+  width: 114.9px;
+  height: 32.9px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
