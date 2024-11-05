@@ -104,7 +104,7 @@ body {
   bottom: 0;
   width: 0;
   height: 2px; /* Толщина подчеркивания */
-  background-color: black; /* Цвет подчеркивания */
+  background-color: rgba(117, 98, 87, 1); /* Цвет подчеркивания */
   transition: width 0.3s ease; /* Анимация */
   pointer-events: none; /* Чтобы подчеркивание не мешало клику */
 }
@@ -192,6 +192,12 @@ body {
   color: #ffffff;
 }
 
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
 
 .main-index {
   flex-grow: 1;
@@ -564,6 +570,7 @@ form button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 40px 70px 30px;
+  margin-top: auto;
 }
 
 /* CONTACT-INFORMATION */
@@ -645,7 +652,6 @@ form button:hover {
 .contacts-logo:active {
   color: rgba(117, 97, 87, 0.3);
 }
-
 
 
 
