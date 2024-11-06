@@ -491,6 +491,24 @@ main {
   outline: none;
 }
 
+.hotel-search-button:hover {
+  background-color: #615048;
+}
+
+.hotel-search-button:focus-visible {
+  background-color: #615048;
+}
+
+.hotel-search-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-search-button:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
+
 .search-index-button:hover {
   background-color: #6b5148;
 }
@@ -584,6 +602,7 @@ form button:hover {
   list-style-type: none;
 }
 
+
 .contact-information-link {
   display: flex;
   flex-wrap: wrap;
@@ -591,12 +610,12 @@ form button:hover {
   align-items: center;
   width: 47px;
   height: 40px;
-  color: #83b3d3;
+  color: #83B3D3;
   outline: none;
 }
 
 .contact-information-link:hover {
-  color: #68a2ca;
+  color: #68A2CA;
 }
 
 .contact-information-link:focus-visible {
@@ -1436,13 +1455,15 @@ form button:hover {
 .subscribe-catalog-input {
   flex-grow: 1;
   padding: 12px 20px;
+  background-color: #f2f2f2;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   color: #000000;
-  background: #f2f2f2;
+  text-align: left;
   border: none;
+  outline: none;
   border-radius: 4px 0 0 4px;
 }
 
