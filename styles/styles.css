@@ -455,6 +455,7 @@ body {
 .recomendation-item {
   max-width: 400px;
   padding: 81px 85px;
+  flex-grow: 1;
 }
 
 .recomendation-title {
@@ -1208,7 +1209,7 @@ form button:hover {
 
 
 .select-options {
-  padding: 12px 20px;
+  padding: 14px 20px;
   margin: 0;
   width: 292px;
   font-family: "PT Sans", sans-serif;
@@ -1249,8 +1250,9 @@ form button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 44px;
-  min-height: 44px;
+  min-width: 48px;
+  min-height: 48px;
+  width: 48px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   outline: none;
