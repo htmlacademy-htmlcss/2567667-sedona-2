@@ -1926,7 +1926,7 @@ form button:hover {
   border: none;
   border-radius: 50%;
   background-color: #83b3d3;
-  background-image: url("../img/icons/info.svg");
+  background-image: url("../images/info.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 2px 12px;
@@ -1967,7 +1967,7 @@ form button:hover {
   width: 19px;
   height: 9px;
 
-  background-image: url("../img/icons/triangle(1).svg");
+  background-image: url("../images/triangle(1).svg");
   background-repeat: no-repeat;
   background-size: 19px 9px;
   background-position: center;
