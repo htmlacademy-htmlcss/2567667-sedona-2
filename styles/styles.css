@@ -154,12 +154,12 @@ body {
   text-align: center;
 }
 
-.navigation-link[href]:hover,
+.navigation-link:hover,
 .navigation-link:focus {
   color: #756157;
 }
 
-.navigation-link[href]:active {
+.navigation-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -499,6 +499,7 @@ body {
 
 .hotel-search-link:not(.is-disabled):active {
   background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-search-button {
@@ -586,6 +587,7 @@ body {
 
 .subscribe-button:not(:disabled):active {
   background-color: #83b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribe-input {
@@ -1566,6 +1568,7 @@ body {
 
 .subscribe-catalog-button:not(:disabled):active {
   background-color: #83b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -1600,6 +1603,7 @@ body {
 
 .modal-open-button:not(.is-disabled):active {
   background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
