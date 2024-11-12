@@ -43,7 +43,7 @@
             </a>
           </li>
           <li class="user-item">
-            <a class="modal-open-button" href="modal.html" title="Бронирование Гостинницы">Хочу сюда!</a>
+            <a class="modal-open-button" href="#" title="Бронирование Гостинницы">Хочу сюда!</a>
           </li>
         </ul>
     </header>
@@ -161,26 +161,26 @@
     </footer>
 
 
-
+  <!-- MODAL-CONTAINER -->
     <div class="modal-container modal-container-closed">
       <div class="modal modal-auth">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <h2 class="modal-title secondary-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="fieldset-container fieldset-check">
               <label class="booking-label">Дата Заезда:</label>
               <div class="booking-input-container">
-                <input class="booking-date input" id="arriving-date" name="arriving-date" type="text" value="27 апреля 2020" required="">
+                <input class="booking-date booking-input" id="arriving-date" name="arriving-date" type="text" value="27 апреля 2020" required>
               </div>
               <p class="modal-paragraph modal-text-first">Мы не можем отправить вас в прошлое.</p>
             </fieldset>
             <fieldset class="fieldset-container fieldset-check">
               <label class="booking-label">Дата Выезда:</label>
               <div class="booking-input-container">
-                <input class="booking-date input" id="arriving-date" name="arriving-date" type="text" value="27 апреля 2020" required="">
+                <input class="booking-date booking-input" id="arriving-date" name="arriving-date" type="text" value="1 сентября 2023" required>
               </div>
               <p class="modal-paragraph modal-text-second">На эти даты есть свободные номера. Пока есть.</p>
             </fieldset>
@@ -190,14 +190,14 @@
                 <button class="minus-button modal-check-button" type="button">
                   <span class="visually-hidden">Уменьшить</span>
                 </button>
-                <input class="booking-guest input" id="adults" type="number" value="2" required>
+                <input class="booking-guest booking-input" id="adults" type="number" name="adults" value="2" required>
                 <button class="plus-button modal-check-button" type="button">
                   <span class="visually-hidden">Увеличить</span>
                 </button>
               </div>
             </fieldset>
             <fieldset class="fieldset-container">
-              <label class="booking-label">Дети:</label>
+              <label class="booking-label label-kids">Дети:</label>
               <button class="tooltip-button" type="button">
               </button>
               <div class="tooltip-container">
@@ -210,13 +210,13 @@
                 <button class="minus-button modal-check-button" type="button">
                   <span class="visually-hidden">Уменьшить</span>
                 </button>
-                <input class="booking-guest input" id="adults" type="number" value="2" required>
+                <input class="booking-guest booking-input" id="kids" type="number" name="kids" value="2" required>
                 <button class="plus-button modal-check-button" type="button">
                   <span class="visually-hidden">Увеличить</span>
                 </button>
               </div>
             </fieldset>
-            <button class="auth-form-button" type="submit">Найти</button>
+            <button class="auth-form-button button-search" type="submit">Найти</button>
           </form>
         </section>
       </div>
