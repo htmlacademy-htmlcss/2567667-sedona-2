@@ -1174,7 +1174,8 @@ body {
 
 
 .select-options {
-  padding: 14px 20px;
+  padding: 0 20px;
+  height: 49px;
   margin: 0;
   width: 292px;
   font-family: "PT Sans", sans-serif;
@@ -1607,6 +1608,10 @@ body {
   display: flex;
 
   background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-container-closed {
+  display: none;
 }
 
 .modal {
