@@ -1556,6 +1556,16 @@ body {
   padding: 8px 50px;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+
+.subscribe-catalog-button:not(:disabled):hover,
+.subscribe-catalog-button:focus-visible {
+  background-color: #68a2ca;
+}
+
+.subscribe-catalog-button:not(:disabled):active {
+  background-color: #83b3d3;
 }
 
 
