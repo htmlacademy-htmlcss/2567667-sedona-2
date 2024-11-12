@@ -1902,7 +1902,6 @@ body {
   background-image: url("../images/modalinfo.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 2px 12px;
 }
 
 .tooltip-button:not(:disabled):hover ~ .tooltip-container,
@@ -1916,7 +1915,7 @@ body {
 
 .tooltip-container {
   position: absolute;
-  top: calc(100% + 4px);
+  top: 50px;
   left: -51px;
   display: none;
   padding: 22px 18px 21px 22px;
