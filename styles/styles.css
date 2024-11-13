@@ -518,19 +518,6 @@ body {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* SUBSCRIBE */
 .subscribe {
   padding: 96px 70px 104px;
@@ -563,23 +550,6 @@ body {
   margin: 0 auto;
 }
 
-.subscribe-input {
-  width: 452px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-
-  font-weight: 400;
-
-  border-radius: 4px 0 0 4px;
-}
-
-.subscribe-button {
-  max-width: 400px;
-  color: #ffffff;
-  background-color: #82b3d3;
-  border-radius: 0 4px 4px 0;
-}
-
 .subscribe-button:not(:disabled):hover,
 .subscribe-button:focus-visible {
   background-color: #68a2ca;
@@ -603,6 +573,9 @@ body {
   border: none;
   outline: none;
   border-radius: 4px 0 0 4px;
+  width: 452px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .subscribe-button {
@@ -618,6 +591,8 @@ body {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
+  max-width: 400px;
+  background-color: #82b3d3;
 }
 
 
@@ -786,7 +761,7 @@ body {
   align-items: center;
 }
 
-.breadcrumbs-item:not(:last-child):after {
+.breadcrumbs-item:not(:last-child)::after {
   width: 29px;
   height: 10px;
   content: "";
@@ -889,8 +864,8 @@ body {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-color: white;
-  border: 2px solid white;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 4px;
   transition: background-color 0.3s, border-color 0.3s;
   flex-shrink: 0;
@@ -903,7 +878,7 @@ body {
   width: 20px;
   height: 20px;
   background-color: #f2f2f2;
-  border: 2px solid white;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   transition: background-color 0.3s, border-color 0.3s;
   flex-shrink: 0;
@@ -917,8 +892,8 @@ body {
 
 
 .filter-form-input[type="checkbox"]:checked + .marker {
-  background-color: white;
-  border-color: white;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 
 .filter-form-input[type="checkbox"]:checked + .marker::after {
@@ -936,8 +911,8 @@ body {
 
 /* Стили для выбранных радиокнопок */
 .filter-form-input[type="radio"]:checked + .marker {
-  background-color: white;
-  border-color: white;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 
 /* Точка внутри радиокнопки при выборе */
@@ -1002,7 +977,6 @@ body {
   border: none;
   outline: none;
   appearance: none;
-  -moz-appearance: textfield;
 }
 
 .range-price-input::-webkit-inner-spin-button,
@@ -1365,11 +1339,6 @@ body {
   background-color: #68a2ca;
 }
 
-.card-item-button:hover,
-.card-item-button:focus-visible {
-  background-color: #68a2ca;
-}
-
 .card-item-button:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
@@ -1575,8 +1544,6 @@ body {
 .modal-open-button {
   width: 160px;
   margin-left: 20px;
-  padding-right: 34px;
-  padding-left: 34px;
   color: #ffffff;
   background-color: #756157;
   display: block;
@@ -1821,7 +1788,7 @@ body {
 
 .booking-guest::-webkit-outer-spin-button,
 .booking-guest::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
