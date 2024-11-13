@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Седона</title>
-    <link rel="icon" href="images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
-  <body>
-    <!-- Хедер -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <!-- Хедер -->
   <div class="page-container">
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="header-logo" href="index.html">
           <img class="header-logo-image" alt="Логотип Города Седона" src="images/logo.svg" width="140" height="70">
         </a>
-      <!-- NAVIGATION-LIST -->
+        <!-- NAVIGATION-LIST -->
         <ul class="navigation-list">
           <li class="navigation-item navigation-link-index">
             <a class="navigation-link active-navigation-link" href="index.html">Главная</a>
@@ -30,30 +32,29 @@
       </nav>
 
       <!-- Блок справа: поиск, избранное и кнопка "Хочу сюда!"  USER-->
-        <ul class="user-list">
-          <li class="user-item">
-            <a class="user-link user-search" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="user-item">
-            <a class="user-link user-favorites" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <span class="counter-favorites">12</span>
-            </a>
-          </li>
-          <li class="user-item">
-            <a class="modal-open-button" href="#" title="Бронирование Гостинницы">Хочу сюда!</a>
-          </li>
-        </ul>
+      <ul class="user-list">
+        <li class="user-item">
+          <a class="user-link user-search" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="user-item">
+          <a class="user-link user-favorites" href="#">
+            <span class="visually-hidden">Избранное</span>
+            <span class="counter-favorites">12</span>
+          </a>
+        </li>
+        <li class="user-item">
+          <a class="modal-open-button" href="#" title="Бронирование Гостинницы">Хочу сюда!</a>
+        </li>
+      </ul>
     </header>
     <!-- Основной блок -->
-    <main class = "main-index" data-test="main">
+    <main class="main-index" data-test="main">
       <!-- HERO -->
-      <section class = "hero" data-test="hero">
-        <img class="hero-image" src="images/welcome.svg" alt="Добро пожаловать в Седону!" width="458"
-        height="352">
-        <h1 class = "visually-hidden">Город Седона</h1>
+      <section class="hero" data-test="hero">
+        <img class="hero-image" src="images/welcome.svg" alt="Добро пожаловать в Седону!" width="458" height="352">
+        <h1 class="visually-hidden">Город Седона</h1>
       </section>
       <!-- ADVANTAGES -->
       <section class="advantages" data-test="advantages">
@@ -94,74 +95,81 @@
         </ul>
       </section>
       <!-- FRAME 36 -->
-       <section class="sedona-about" data-test="service">
+      <section class="sedona-about" data-test="service">
         <h2 class="sedona-about-title secondary-title">Приезжайте в Седону отдохнуть <br> в комфорте и уюте!</h2>
         <p class="sedona-about-personal secondary-description">Опытный персонал и качественное обслуживание!</p>
-      <!-- FRAME 40 -->
-          <ul class="recomendation-list">
-            <li class="recomendation-item white-item">
-              <h3 class="recomendation-title home-title third-title">Жильё</h3>
-              <p class="recomendation-description third-description">Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!</p>
-            </li>
-            <li class="recomendation-item recomendation-food">
-              <h3 class="recomendation-title food-title third-title">Еда</h3>
-              <p class="recomendation-description third-description">Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!</p>
-            </li>
-            <li class="recomendation-item white-item">
-              <h3 class="recomendation-title souvenirs-title third-title">Сувениры</h3>
-              <p class="recomendation-description third-description">Не только китайского, <br> но и настоящего местного <br> производства!</p>
-            </li>
-          </ul>
-        </section>
-        <!-- Поиск гостиницы -->
-         <section class="hotel-search" data-test="search">
-          <h2 class="hotel-search-title secondary-title">Заинтересовались?</h2>
-          <p class="hotel-search-description secondary-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a class= "hotel-search-link hotel-search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
-         </section>
-        <!-- SUBSCRIBE -->
-        <section class="subscribe main-subscribe" data-test="subscribe">
-          <h2 class="subscribe-title secondary-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description secondary-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-box">
-            <input class="subscribe-input" type="email" name="email" placeholder="Ваш e-mail" required>
-            <button class="subscribe-button" type="submit">Подписаться</button>
-          </form>
-        </section>
+        <!-- FRAME 40 -->
+        <ul class="recomendation-list">
+          <li class="recomendation-item white-item">
+            <h3 class="recomendation-title home-title third-title">Жильё</h3>
+            <p class="recomendation-description third-description">Рекомендуем пожить
+              <br> в настоящем мотеле,
+              <br> всё как в кино!</p>
+          </li>
+          <li class="recomendation-item recomendation-food">
+            <h3 class="recomendation-title food-title third-title">Еда</h3>
+            <p class="recomendation-description third-description">Всегда заказывайте
+              <br> топовый фирменный бургер,
+              <br> вы не разочаруетесь!</p>
+          </li>
+          <li class="recomendation-item white-item">
+            <h3 class="recomendation-title souvenirs-title third-title">Сувениры</h3>
+            <p class="recomendation-description third-description">Не только китайского,
+              <br> но и настоящего местного
+              <br> производства!</p>
+          </li>
+        </ul>
+      </section>
+      <!-- Поиск гостиницы -->
+      <section class="hotel-search" data-test="search">
+        <h2 class="hotel-search-title secondary-title">Заинтересовались?</h2>
+        <p class="hotel-search-description secondary-description">Укажите предполагаемые даты поездки,
+          <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="hotel-search-link hotel-search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
+      </section>
+      <!-- SUBSCRIBE -->
+      <section class="subscribe main-subscribe" data-test="subscribe">
+        <h2 class="subscribe-title secondary-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description secondary-description">Только полезная информация и никакого спама,
+          <br> честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-box">
+          <input class="subscribe-input" type="email" name="email" placeholder="Ваш e-mail" required>
+          <button class="subscribe-button" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
     <!-- Футер Страницы -->
     <footer class="footer" data-test="footer">
       <!-- Контактная Информация -->
-          <h2 class="visually-hidden secondary-title">Контактная Информация</h2>
-          <ul class="contact-information-list">
-            <li class="contact-information-item">
-              <a class="contact-information-link vk-link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">ВК</span>
-              </a>
-            </li>
+      <h2 class="visually-hidden secondary-title">Контактная Информация</h2>
+      <ul class="contact-information-list">
+        <li class="contact-information-item">
+          <a class="contact-information-link vk-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВК</span>
+          </a>
+        </li>
 
-            <li class="contact-information-item">
-              <a class="contact-information-link tg-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-            <li class="contact-information-item">
-              <a class="contact-information-link youtube-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">YouTube</span>
-              </a>
-            </li>
-          </ul>
+        <li class="contact-information-item">
+          <a class="contact-information-link tg-link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="contact-information-item">
+          <a class="contact-information-link youtube-link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
 
-        <section class="contacts-address">
-          <a class="contacts-address-phone-number" href="tel:+78128121212"> +7 (812) 812-12-12</a>
-        </section>
-        <a class="html-academy-link" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
+      <section class="contacts-address">
+        <a class="contacts-address-phone-number" href="tel:+78128121212"> +7 (812) 812-12-12</a>
+      </section>
+      <a class="html-academy-link" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
     </footer>
 
-
-  <!-- MODAL-CONTAINER -->
+    <!-- MODAL-CONTAINER -->
     <div class="modal-container">
       <div class="modal modal-auth" data-test="modal">
         <button class="modal-close-button">
@@ -202,8 +210,7 @@
               </button>
               <div class="tooltip-container">
                 <p class="tooltip-message">
-                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-                  размещаются бесплатно.
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                 </p>
               </div>
               <div class="booking-guest-container">
@@ -222,5 +229,6 @@
       </div>
     </div>
   </div>
-  </body>
+</body>
+
 </html>
