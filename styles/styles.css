@@ -240,7 +240,7 @@ body {
 .hero {
   padding: 51px 70px 82px;
   background-color: #c1e6ff;
-  background-image: url("../images/hero-vector.svg"), url("../images/index-background(1).jpg");
+  background-image: url("../images/hero-vector.svg"), url("../images/index-background.jpg");
   background-position: left bottom, left top;
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
@@ -492,7 +492,7 @@ body {
 .main-subscribe {
   color: #ffffff;
   background-color: #756157;
-  background-image: url("../images/subscribe(1).jpg");
+  background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -679,7 +679,7 @@ body {
   padding: 35px 70px 70px;
   color: #ffffff;
   background-color: #68a2ca;
-  background-image: url("../images/filter(1).jpg");
+  background-image: url("../images/filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1835,7 +1835,7 @@ body {
   width: 19px;
   height: 9px;
 
-  background-image: url("../images/triangle(1).svg");
+  background-image: url("../images/triangle.svg");
   background-repeat: no-repeat;
   background-size: 19px 9px;
   background-position: center;
