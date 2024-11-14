@@ -20,19 +20,6 @@
   box-sizing: border-box;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 html {
   height: 100%;
   margin: 0 auto;
@@ -45,7 +32,7 @@ body {
   min-width: 1280px;
   margin: 0;
 
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -87,7 +74,6 @@ body {
   margin: 0;
   text-align: center;
 }
-
 
 .page-container {
   display: flex;
@@ -250,8 +236,6 @@ body {
   flex-grow: 1;
 }
 
-
-
 /* HERO */
 .hero {
   padding: 51px 70px 82px;
@@ -269,9 +253,6 @@ body {
   height: auto;
   object-fit: contain;
 }
-
-
-
 
 /* ADVANTAGES */
 
@@ -308,7 +289,6 @@ body {
   padding: 0 70px;
 }
 
-
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -320,6 +300,7 @@ body {
 
 .advantages-item {
   width: 400px;
+  height: 385px;
   padding: 112px 85px;
 }
 
@@ -350,6 +331,7 @@ body {
 
 .blue-item .advantages-title {
   color:#ffffff;
+  margin-left: -4px;
 }
 
 .grey-item {
@@ -381,7 +363,7 @@ body {
 }
 
 .blue-item .advantages-title::after {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-description {
@@ -389,13 +371,7 @@ body {
   text-align: center;
 }
 
-
-
-
-
-
 /* FRAME 36 */
-
 .sedona-about {
   padding-top: 64px;
 }
@@ -432,6 +408,7 @@ body {
 .recomendation-description {
   max-width: 230px;
   text-wrap: balance;
+  margin-left: -1px;
 }
 
 .recomendation-title::before {
@@ -442,7 +419,6 @@ body {
   margin: auto;
   margin-bottom: 26px;
 }
-
 
 .home-title::before {
   background-image: url("../images/home.svg");
@@ -462,17 +438,7 @@ body {
   background-repeat: no-repeat;
 }
 
-
-
-
-
-
-
-
-
-
 /* HOTEL-SEARCH */
-
 .hotel-search {
   padding: 96px 70px;
 }
@@ -595,11 +561,7 @@ body {
   background-color: #82b3d3;
 }
 
-
-
-
 /* FOOTER */
-
 .footer {
   display: flex;
   justify-content: space-between;
@@ -629,6 +591,7 @@ body {
   min-width: 40px;
   min-height: 40px;
   padding: 6px;
+  margin-right: -1px;
 }
 
 .contact-information-link::before {
@@ -644,6 +607,7 @@ body {
 
 .vk-link::before {
   mask-image: url("../images/vk.svg");
+  margin-right: -4px;
 }
 
 .tg-link::before {
@@ -655,7 +619,6 @@ body {
 }
 
 /* CONTACT-INFORMATION */
-
 .contact-information-link:not(.is-disabled):hover::before,
 .contact-information-link:focus-visible::before {
   background-color: #68a2ca;
@@ -711,26 +674,7 @@ body {
   background-color: rgba(117, 97, 87, 0.3);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CATALOG */
-
-/* catalog */
 .main-catalog-wrapper {
   padding: 35px 70px 70px;
   color: #ffffff;
@@ -885,11 +829,9 @@ body {
   position: relative;
 }
 
-
 .filter-form-control:hover .marker {
   background-color: #e6e6e6;
 }
-
 
 .filter-form-input[type="checkbox"]:checked + .marker {
   background-color: #ffffff;
@@ -929,9 +871,6 @@ body {
   transform: translate(-50%, -50%); /* Центрирование точки */
 }
 
-
-
-
 /* PRICE */
 .range-price {
   display: flex;
@@ -949,7 +888,7 @@ body {
   top: 50%;
   width: 18px;
   height: 24px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1091,7 +1030,7 @@ body {
 
 .filter-form-button[type="reset"] {
   padding: 8px 50px 8px 50px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1121,7 +1060,6 @@ body {
   color: rgba(255, 255, 255, 0.1);
 }
 
-
 /* catalog-cards */
 .hotel-list-section {
   padding: 50px 70px 60px;
@@ -1135,8 +1073,6 @@ body {
   gap: 70px;
 }
 
-
-
 .hotel-catalog-header {
   flex-grow: 1;
   margin: 0;
@@ -1146,8 +1082,6 @@ body {
   text-align: left;
   text-transform: uppercase;
 }
-
-
 
 .select-options {
   padding: 0 20px;
@@ -1320,7 +1254,7 @@ body {
 
 .card-item-button {
   padding: 8px 0;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1540,7 +1474,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 .modal-open-button {
   width: 160px;
   margin-left: 20px;
@@ -1573,11 +1506,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
-
-
 /* MODAL-CONTAINER */
-
 .modal-container {
   position: fixed;
   top: 0;
@@ -1970,4 +1899,17 @@ body {
 .button-search:disabled {
   background-color: #e5e5e5;
   cursor: default;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
