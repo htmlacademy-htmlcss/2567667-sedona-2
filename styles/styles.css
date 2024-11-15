@@ -300,7 +300,7 @@ body {
 
 .advantages-item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   padding: 112px 85px;
 }
 
@@ -705,10 +705,38 @@ body {
   align-items: center;
 }
 
+.breadcrumbs-home {
+  position: relative;
+  display: flex;
+  padding-left: 1px;
+}
+
+.breadcrumbs-home::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 1);
+  mask: url("../images/homepage.svg") no-repeat center / contain;
+  -webkit-mask: url("../images/homepage.svg") no-repeat center / contain;
+  margin-right: 5px;
+}
+
+.breadcrumbs-home:hover::before {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-home:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .breadcrumbs-item:not(:last-child)::after {
   width: 29px;
   height: 10px;
   content: "";
+  margin-left: 10px;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -872,73 +900,83 @@ body {
 }
 
 /* PRICE */
-.range-price {
+.range-price-wrapper {
   display: flex;
-  gap: 2px;
-  margin: 0 0 44px;
+  flex-wrap: wrap;
+  width: 288px;
+  margin-bottom: 44px;
 }
 
 .range-price-control {
   position: relative;
-}
-
-.range-price-control::before {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  width: 18px;
-  height: 24px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.3);
-  transform: translateY(-50%);
-}
-
-.range-price-control[for="min-price"]::before {
-  content: "от";
-}
-
-.range-price-control[for="max-price"]::before {
-  content: "до";
+  width: 143px;
+  height: 48px;
 }
 
 .range-price-input {
   width: 143px;
-  padding: 12px 43px 12px 20px;
-  box-sizing: border-box;
-  background-color: #f2f2f2;
+  height: 48px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-size: 18px;
-  font-weight: 700;
   line-height: 24px;
+  font-weight: 700;
   color: #000000;
-  border: none;
-  outline: none;
-  appearance: none;
+  background-color: #F2F2F2;
+  border: 0;
 }
 
-.range-price-input::-webkit-inner-spin-button,
-.range-price-input::-webkit-outer-spin-button {
-  margin: 0;
-  appearance: none;
+.range-price-input::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  color: #000000;
+  font-weight: 700;
 }
 
-.range-price-input:hover {
-  background-color: #e6e6e6;
+.range-price-input-first {
+  padding: 12px 41px 12px 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
-.range-price-input:focus-visible {
-  background-color: #e6e6e6;
-  outline: 3px solid #83b3d3;
+.range-price-input-first:focus {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  outline: 3px solid #82B3D3;
 }
 
-.range-price-input[name="min-price"] {
-  border-radius: 4px 0 0 4px;
+.range-price-input-second {
+  margin-left: 2px;
+  padding: 12px 51px 12px 20px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
-.range-price-input[name="max-price"] {
-  border-radius: 0 4px 4px 0;
+.range-price-input-second:focus {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  outline: 3px solid #82B3D3;
+}
+
+.range-price-description {
+  position: absolute;
+  top: 30%;
+  right: 13%;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #AAAAAA;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
 }
 
 /* price bar */
@@ -1081,10 +1119,11 @@ body {
   line-height: 36px;
   text-align: left;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .select-options {
-  padding: 0 20px;
+  padding: 12px 35px 12px 18px;
   height: 49px;
   margin: 0;
   width: 292px;
@@ -1101,6 +1140,7 @@ body {
   border-radius: 4px;
   appearance: none;
   outline: none;
+  background-color: #FFFFFF;
 }
 
 .select-options:hover,
@@ -1116,6 +1156,8 @@ body {
 
 .menu-view-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 160px;
   gap: 8px;
   padding: 0;
   margin: 0;
@@ -1132,6 +1174,29 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   outline: none;
+  position: relative;
+}
+
+.menu-view-link::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.menu-view-link[href*="view=tile"]::before {
+  background-image: url("../images/grid.svg");
+}
+
+.menu-view-link[href*="view=card"]::before {
+  background-image: url("../images/mosaic-view.svg");
+}
+
+.menu-view-link[href*="view=list"]::before {
+  background-image: url("../images/list-view.svg");
 }
 
 .menu-view-link:hover {
@@ -1419,6 +1484,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .subscribe-catalog-desc {
@@ -1507,36 +1573,31 @@ body {
 }
 
 /* MODAL-CONTAINER */
+
 .modal-container {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
+  display: flex;
   width: 100%;
   height: 100%;
-  z-index: 10;
-
-  display: flex;
-
+  margin: auto;
   background-color: rgba(242, 242, 242, 0.8);
-}
-
-.modal-container-closed {
-  display: none;
 }
 
 .modal {
   position: relative;
+  width: 717px;
   margin: auto;
-  padding: 64px 70px;
-
+  padding: 64px 70px 64px;
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
-.modal-auth {
-  width: 717px;
-  height: 576px;
+.modal-container-closed {
+  display: none;
 }
 
 .modal-close-button {
@@ -1621,7 +1682,7 @@ body {
 
 .booking-label {
   margin-right: auto;
-
+  color: #000000;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -1777,7 +1838,8 @@ body {
   outline: 3px solid #82b3d3;
 }
 
-.modal-check-button:not(:disabled):active::before {
+.modal-check-button:not(:disabled):active::before,
+.modal-check-button:not(:disabled):active::after {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1787,7 +1849,7 @@ body {
 }
 
 .tooltip-button {
-  flex-shrink :0;
+  flex-shrink: 0;
   width: 26px;
   height: 26px;
   margin-right: 46px;
