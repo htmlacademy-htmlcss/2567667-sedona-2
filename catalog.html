@@ -46,7 +46,7 @@
           </a>
         </li>
         <li class="user-item">
-          <a class="modal-open-button" href="modal.html" title="Бронирование Гостиницы">Хочу сюда!</a>
+          <a class="modal-open-button" href="#" title="Бронирование Гостиницы">Хочу сюда!</a>
         </li>
       </ul>
     </header>
@@ -57,9 +57,7 @@
         <!-- BREADCRUMBS -->
         <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html" aria-label="Главная страница">
-              <img src="images/homepage.svg" alt="Главная страница" width="12" height="12">
-            </a>
+            <a class="breadcrumbs-link breadcrumbs-home" href="index.html" aria-label="Главная страница"></a>
           </li>
           <li class="breadcrumbs-item">
             <a href="#" class="breadcrumbs-link" aria-label="Страница гостиниц">Гостиницы</a>
@@ -118,14 +116,14 @@
             </fieldset>
             <fieldset class="filter-form-group filter-form-group-price">
               <legend class="filter-form-title">Стоимость, ₽:</legend>
-              <div class="range-price">
+              <div class="range-price-wrapper range-price">
                 <label class="range-price-control" for="min-price">
-                  <input class="range-price-input" type="number" name="min-price" id="min-price" value="0" min="0" aria-label="Укажите минимальную стоимость.">
-                  <span class="visually-hidden">Изменить минимальную стоимость</span>
+                  <input class="range-price-input range-price-input-first" type="number" name="min-price" id="min-price" aria-label="Укажите минимальную стоимость." placeholder="0">
+                  <span class="range-price-description">от</span>
                 </label>
                 <label class="range-price-control" for="max-price">
-                  <input class="range-price-input" type="number" name="max-price" id="max-price" value="9000" max="9999" aria-label="Укажите максимальную стоимость.">
-                  <span class="visually-hidden">Изменить максимальную стоимость</span>
+                  <input class="range-price-input range-price-input-second" type="number" name="max-price" id="max-price" aria-label="Укажите максимальную стоимость." placeholder="9000">
+                  <span class="range-price-description">до</span>
                 </label>
               </div>
               <div class="range-price-bar">
@@ -154,19 +152,16 @@
             <li class="menu-view-item">
               <a class="menu-view-link menu-view-link-selected" href="catalog.html?view=tile" aria-label="Grid View">
                 <span class="visually-hidden">Показать плиткой</span>
-                <img src="images/grid.svg" alt="Grid view" width="16" height="14">
               </a>
             </li>
             <li class="menu-view-item">
               <a class="menu-view-link" href="catalog.html?view=card" aria-label="Mosaic View">
                 <span class="visually-hidden">Показать карточками</span>
-                <img src="images/mosaic-view.svg" alt="Mosaic view" width="16" height="14">
               </a>
             </li>
             <li class="menu-view-item">
               <a class="menu-view-link" href="catalog.html?view=list" aria-label="List View">
                 <span class="visually-hidden">Показать списком</span>
-                <img src="images/list-view.svg" alt="List view" width="16" height="14">
               </a>
             </li>
           </ul>
